@@ -1,0 +1,1307 @@
+//colors
+$color_boulder_approx: #7a7979;
+$white: #fff;
+$color_mountain_mist_approx: #939292;
+$color_pumice_approx: #c6c6c6;
+$color_dove_gray_approx: #6a6a6a;
+$color_log_cabin_approx: #232323;
+$black: #000;
+$color_alabaster_approx: #f9f9f9;
+//@extend-elements
+//original selectors
+//.promo-image-top .image-cover, .promo-image-bottom .image-cover
+%extend_1 {
+    width: auto;
+    float: left;
+    position: relative;
+}
+
+//original selectors
+//.bland_logo_slide li, .bland_logo_slide .owl-stage
+%extend_2 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-show {
+    display: block !important;
+}
+
+.mobile-show {
+    display: none !important;
+}
+
+.promo-img-text {
+    h2 {
+        letter-spacing: 0.5px;
+        line-height: normal;
+        margin: 0;
+        padding: 0 0 20px;
+    }
+    p {
+        letter-spacing: 0.5px;
+        line-height: normal;
+        margin: 0;
+        padding: 0 0 30px;
+        max-width: 341px;
+    }
+    a {
+        line-height: normal;
+        width: 160px;
+        display: table;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 13px 10px;
+    }
+}
+
+.promo-image-top {
+    width: 100%;
+    float: left;
+    .image-cover {
+        @extend %extend_1;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 263px;
+            display: block;
+            height: 436px;
+            right: -195px;
+            bottom: -39px;
+            z-index: -1;
+        }
+    }
+    .promo-image-right {
+        position: relative;
+        top: 77px;
+    }
+}
+
+.promo-image-left {
+    width: 50%;
+    float: left;
+}
+
+.promo-image-right {
+    width: 50%;
+    float: left;
+}
+
+.promo-image-middle {
+    width: 100%;
+    float: left;
+    .promo-image-left {
+        padding-top: 33px;
+        float: left;
+    }
+    .promo-image-right {
+        float: left;
+        .image-cover {
+            float: right;
+            position: relative;
+        }
+    }
+    .promo-img-text {
+        padding-left: 64px;
+    }
+    .image-cover:after {
+        position: absolute;
+        content: "";
+        width: 282px;
+        display: block;
+        height: 316px;
+        left: -30px;
+        top: -29px;
+        z-index: -1;
+    }
+}
+
+.promo-image-bottom {
+    width: 100%;
+    float: left;
+    margin-top: -137px;
+    .image-cover {
+        @extend %extend_1;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 492px;
+            display: block;
+            height: 143px;
+            right: auto;
+            bottom: -56px;
+            z-index: -1;
+            left: 0; //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: translateX(50%);
+        }
+    }
+    .promo-image-right {
+        position: relative;
+        top: -42px;
+        padding-left: 24px;
+    }
+}
+
+.promo-images-main {
+    padding-bottom: 20px;
+    img.desktop-show {
+        display: block;
+        margin: 0 !important;
+    }
+}
+
+.Home-images-inner {
+    display: flex;
+    align-items: center;
+    .Home-images-inner-right {
+        width: 50%;
+        img {
+            width: 100%;
+            float: left;
+        }
+    }
+    .Home-images-inner-left {
+        width: 50%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.button8 {
+    position: relative;
+    z-index: 0;
+}
+
+.home-img-text {
+    max-width: 401px;
+    h2 {
+        letter-spacing: 0.5px;
+        line-height: normal;
+        margin: 0;
+        padding: 0 0 20px;
+    }
+    a {
+        line-height: normal;
+        width: 160px;
+        display: table;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 13px 10px;
+    }
+    p {
+        letter-spacing: 0.5px;
+        line-height: normal;
+        margin: 0;
+        padding: 0 0 30px;
+    }
+}
+
+.home-img-text-up {
+    max-width: 519px;
+    float: right;
+    width: 100%;
+}
+
+.Home-images-text {
+    padding-top: 20px;
+}
+
+.bland_logo_slide {
+    .active {
+        border: none !important;
+        background: none;
+        img {
+            border: none !important;
+            background: none;
+        }
+    }
+    li {
+        @extend %extend_2;
+    }
+    .owl-stage {
+        @extend %extend_2;
+    }
+    .owl-item img {
+        width: auto !important;
+        display: table;
+        margin: 0 auto;
+    }
+    .owl-nav button {
+        top: 50%; //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+        transform: translateY(-50%);
+        width: 14px;
+        height: 28px;
+        font-size: 0 !important;
+        background-size: 12px !important;
+        margin: 0;
+        position: absolute;
+        background-position: center !important;
+        &.owl-prev {
+            background: url(left-arrow.svg) 0 0 no-repeat !important;
+            left: -48px;
+        }
+        &.owl-next {
+            background: url(right-arrow.svg) 0 0 no-repeat !important;
+            right: -48px;
+        }
+    }
+}
+
+#search {
+    input {
+        font-family: DidactGothic-Regular;
+        font-weight: normal;
+        color: $color_boulder_approx;
+        font-size: 15px;
+        border: $color_boulder_approx solid 1px; //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 0;
+        &:-ms-input-placeholder {
+            color: $color_boulder_approx;
+            opacity: 1;
+        }
+        &:-moz-placeholder {
+            color: $color_boulder_approx;
+            opacity: 1;
+        }
+    }
+    input::-webkit-input-placeholder {
+        color: $color_boulder_approx;
+        opacity: 1;
+    }
+    input::-moz-placeholder {
+        color: $color_boulder_approx;
+        opacity: 1;
+    }
+}
+
+ul {
+    &.filter_type {
+        >li {
+            width: 25%;
+            float: left;
+            position: relative;
+            &:last-child {
+                padding-right: 0;
+                ul {
+                    .checkbox_text {
+                        width: calc(100% - 36px);
+                    }
+                    span.checkbox_close {
+                        text-align: right;
+                        position: relative;
+                        left: 3px;
+                    }
+                }
+                h2:before {
+                    right: 4px;
+                }
+            }
+            ul {
+                display: none;
+                padding: 4px 0;
+                position: absolute;
+                background: $white;
+                width: 100%;
+                left: 0;
+                padding: 4px 25px;
+                z-index: 1;
+                padding-right: 0;
+                z-index: 11;
+                &.active {
+                    background: $white;
+                }
+            }
+            a {
+                line-height: normal;
+                padding: 3px 0;
+                display: block;
+                width: 100%;
+                float: left;
+            }
+            &:first-child ul {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+        h2 {
+            text-transform: capitalize;
+            padding-right: 50px;
+            text-align: left;
+            letter-spacing: 0.5px;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                background: $color_boulder_approx;
+                display: block;
+                content: "";
+                right: 0;
+                top: 50%; //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+                transform: translateY(-50%);
+            }
+            &:before {
+                position: absolute;
+                width: 2px;
+                height: 10px;
+                background: $color_boulder_approx;
+                display: block;
+                content: "";
+                right: 4px;
+                top: 50%; //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+                transform: translateY(-50%);
+            }
+            &.liactive:before {
+                display: none;
+            }
+        }
+        li ul {
+            padding-top: 7px;
+            padding-bottom: 13px;
+        }
+    }
+    &.submenu {
+        position: absolute;
+        background: $color_alabaster_approx;
+        padding: 10px; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+        width: 200px;
+        margin: 0 0 0 -13px;
+        display: none;
+    }
+}
+
+.filter_type {
+    >li {
+        padding: 0 25px;
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+    ul li a {
+        text-transform: capitalize;
+        width: 100%;
+        display: block;
+    }
+    li ul li {
+        float: left;
+        width: 100%;
+        &.select_filter span.checkbox_close {
+            display: table;
+        }
+    }
+}
+
+.filter_colection_inner {
+    width: 100%;
+    float: left;
+    padding-top: 44px;
+    padding-bottom: 15px;
+}
+
+.checkbox_tag {
+    float: left;
+    width: 16px;
+    height: 17px;
+    border: $color_boulder_approx solid 1px;
+    display: block;
+    margin: 5px 0 0;
+    position: relative;
+}
+
+.checkbox_text {
+    width: calc(100% - 56px);
+    float: left;
+    padding: 0 0 0 10px; //Instead of the line below you could use @include box-sizing($bs)
+    box-sizing: border-box;
+}
+
+.filter_by_btn {
+    display: none;
+    h3 {
+        text-align: center;
+        line-height: normal;
+        text-transform: capitalize;
+        padding: 9px 10px;
+        border: $color_mountain_mist_approx solid 1px;
+        cursor: pointer;
+    }
+}
+
+.product-details {
+    text-align: left;
+    &.product_content a {
+        text-decoration: none !important;
+    }
+}
+
+.filter_mobile_main {
+    padding-bottom: 36px;
+    .product {
+        margin-bottom: 44px;
+    }
+    .collection-product-item {
+        padding-bottom: 24px;
+        padding-top: 30px;
+    }
+    &.filter_mobile_pro {
+        display: block !important;
+    }
+    button.loader_btn {
+        line-height: normal;
+        width: 160px;
+        display: table;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 13px 10px;
+        margin: 0 auto;
+    }
+}
+
+.coll-banner-without-img {
+    margin: 0 auto;
+    padding: 60px 0 70px;
+    .Home-images-inner-right {
+        display: none;
+    }
+    .Home-images-inner-left {
+        width: 100%;
+    }
+    .home-img-text-up {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .home-img-text {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.product-image-container {
+    position: static !important;
+    height: auto;
+    .active {
+        background: none;
+        img {
+            background: none;
+            border: none !important;
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 0;
+        button {
+            background: $color_pumice_approx !important;
+            width: 14px;
+            height: 14px;
+            margin: 0;
+            bottom: 0;
+            z-index: 32;
+            padding: 0; //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+            border-radius: 100%;
+            border: solid 1px transparent;
+            margin: 0 4px;
+            &.active {
+                background: none !important;
+                border: $color_pumice_approx solid 1px;
+            }
+        }
+    }
+    img {
+        width: auto !important;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.product_top_banner {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.product-description {
+    width: 100%;
+    float: left;
+    padding-top: 0;
+    .rte {
+        width: 100%;
+        padding-top: 0;
+        float: left;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 10px;
+        p {
+            padding-bottom: 18px;
+            padding-bottom: 17px;
+        }
+        strong {
+            font-weight: normal;
+            width: 100%;
+            float: left;
+            padding-bottom: 2px;
+            br {
+                display: none;
+            }
+        }
+    }
+    span:empty {
+        display: none;
+    }
+}
+
+.price-review {
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: normal;
+    border-bottom: $color_dove_gray_approx solid 1px;
+    padding-bottom: 9px;
+    margin: 0 0 13px;
+    >div {
+        float: left;
+        margin: 0 !important;
+    }
+    span {
+        margin-bottom: 0;
+        &.product-price {
+            position: relative;
+            top: -5px;
+        }
+    }
+    .spr-icon {
+        font-size: 13px !important;
+        margin: 0 0 0 3px;
+    }
+    .spr-badge span {
+        width: 100%;
+        float: right;
+        font-size: 16px;
+        text-align: right;
+        text-transform: capitalize;
+        margin: 0;
+        position: relative;
+        &.spr-badge-caption {
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            padding-top: 2px;
+        }
+    }
+}
+
+span {
+    &.spr-badge-caption {
+        padding: 2px 14px 0 0 !important;
+        cursor: pointer;
+        &:before {
+            content: "";
+            background: url(down-button.svg) no-repeat 0 0;
+            width: 10px;
+            position: absolute;
+            height: 5px;
+            right: 0;
+            top: 7px;
+        }
+    }
+    &.checkbox_close {
+        width: 20px;
+        float: left;
+        text-align: center;
+        display: none;
+        svg {
+            width: 15px;
+        }
+    }
+}
+
+.product-add {
+    margin: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    input {
+        margin: 0 !important;
+        background: transparent;
+        &:hover {
+            background: none;
+        }
+    }
+}
+
+.product-right {
+    width: 44% !important;
+    float: left;
+    h1 {
+        padding: 0 0 4px;
+    }
+}
+
+.product-photos {
+    width: 56% !important;
+    padding-right: 50px;
+    float: left;
+}
+
+.vendor_product {
+    padding: 0 0 8px;
+    font-size: 16px;
+    color: $color_boulder_approx;
+    letter-spacing: 0.5px;
+}
+
+.product-padding-bottom {
+    padding-bottom: 20px;
+}
+
+.logout-link {
+    border: $color_log_cabin_approx solid 1px;
+    padding: 7px 56px;
+    text-transform: uppercase;
+    color: $color_log_cabin_approx !important;
+    opacity: 1;
+    display: table;
+    margin: 0 auto;
+    &:hover {
+        color: $white !important;
+    }
+}
+
+.calcel_note {
+    margin-top: 20px;
+    width: 100%;
+    float: left;
+    letter-spacing: 0.5px;
+    a {
+        color: $color_log_cabin_approx;
+        background: none;
+        border: $color_log_cabin_approx solid 1px;
+        width: 160px;
+        display: table;
+        letter-spacing: 0.5px;
+        text-align: center;
+        padding: 10px;
+        line-height: normal;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+#CartDrawer {
+    .row {
+        padding-bottom: 25px;
+        .display-table {
+            padding-top: 7px;
+        }
+        p {
+            padding-bottom: 6px;
+            line-height: normal;
+            strong {
+                font-weight: normal;
+            }
+        }
+    }
+    .ajaxcart__footer {
+        .cart__checkout {
+            margin-top: 7px;
+            background: none;
+            color: $color_log_cabin_approx;
+            border: $color_log_cabin_approx solid 1px;
+            letter-spacing: 0.5px;
+            &:hover {
+                color: $white;
+            }
+        }
+        p {
+            padding-top: 5px;
+        }
+    }
+}
+
+.ajaxcart__inner {
+    margin-bottom: 20px;
+}
+
+#search_popup {
+    #q {
+        text-transform: none;
+    }
+    input::-webkit-input-placeholder {
+        text-transform: uppercase;
+    }
+    input::-moz-placeholder {
+        text-transform: uppercase;
+    }
+    input {
+        &:-ms-input-placeholder {
+            text-transform: uppercase;
+        }
+        &:-moz-placeholder {
+            text-transform: uppercase;
+        }
+    }
+}
+
+#search-bar {
+    display: none;
+}
+
+@media(max-width:1250px) {
+    .home-img-text {
+        max-width: 450px;
+        padding: 0 15px; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width:1100px) {
+    .bland_logo_slide {
+        .flex-prev {
+            left: 0;
+            width: 30px;
+            height: 30px;
+            &:before {
+                line-height: 30px;
+            }
+        }
+        .flex-next:before {
+            line-height: 30px;
+        }
+    }
+    .Home-images-inner .Home-images-inner-left {
+        padding-left: 15px;
+    }
+    .flex-direction-nav .flex-next {
+        right: 0;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media(min-width:1024px) {
+    .promo-image-left {
+        padding-right: 40px;
+    }
+    .promo-image-right {
+        padding-left: 50px !important;
+    }
+}
+
+@media(max-width:1024px) and(min-width:768px) {
+    .promo-image-left {
+        padding-right: 25px;
+    }
+    .promo-image-right {
+        padding-left: 25px !important;
+    }
+}
+
+@media(max-width:1024px) {
+    .home-img-text {
+        h2 {
+            padding: 0 0 4px;
+        }
+        p {
+            padding: 0 0 11px;
+        }
+    }
+}
+
+@media(max-width:1023px) {
+    .home_hero_slider {
+        .flex-caption {
+            padding: 0;
+        }
+        .slide-title {
+            margin-bottom: 17px;
+        }
+    }
+    ul.filter_type {
+        h2 {
+            padding-right: 15px;
+        }
+        >li ul {
+            padding: 4px 0;
+        }
+    }
+    .filter_type>li {
+        padding: 0;
+        padding-right: 30px;
+    }
+    div#video {
+        float: left;
+        width: 100%;
+        iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .promo-image-top {
+        display: flex;
+        align-items: center;
+        padding-bottom: 118px;
+    }
+    .promo-image-bottom {
+        display: flex;
+        align-items: baseline;
+    }
+    .filter_mobile_main.filter_mobile_main_top {
+        display: block !important;
+    }
+}
+
+@media(max-width:767px) {
+    .desktop-show {
+        display: none !important;
+    }
+    .mobile-show {
+        display: block !important;
+    }
+    .Home-images-inner {
+        flex-direction: column;
+        flex-basis: auto;
+        flex-flow: column-reverse;
+        .Home-images-inner-right {
+            width: 100%;
+        }
+        .Home-images-inner-left {
+            width: 100%;
+            padding-right: 20px;
+        }
+    }
+    .filter_mobile_main {
+        padding-bottom: 9px;
+        display: none;
+    }
+    .home-img-text-up {
+        max-width: 100%;
+        padding: 32px 0 37px;
+    }
+    .home-img-text {
+        max-width: 100%;
+        h2 {
+            padding: 0 0 16px;
+            text-align: left;
+        }
+        p {
+            padding: 0;
+            font-size: 13px !important;
+        }
+    }
+    .coll-banner-without-img {
+        padding: 0 0 6px;
+        .home-img-text-up {
+            text-align: left;
+        }
+    }
+    .main_brnad_logo {
+        padding: 17px 0 9px;
+    }
+    .home_hero_slider {
+        .slide-title {
+            font-size: 33px !important;
+            font-weight: normal !important;
+            padding-top: 11px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .caption-inners {
+            text-align: left !important;
+            max-width: 100%;
+            padding: 10px 0 !important;
+        }
+        .flex-caption {
+            position: static; //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: none;
+            padding: 0 5%;
+            p {
+                font-size: 15px !important;
+            }
+        }
+    }
+    .product_content {
+        h3 {
+            font-size: 15px !important;
+            line-height: 20px !important;
+            margin-bottom: 3px !important;
+        }
+        .price {
+            text-align: left;
+            font-size: 12px !important;
+            line-height: 20px !important;
+        }
+        .product_text p {
+            line-height: 20px !important;
+            font-size: 12px !important;
+        }
+    }
+    .promo-image-left {
+        width: 100%;
+        float: left;
+    }
+    .promo-image-right {
+        width: 100%;
+        float: left;
+    }
+    .featured-section {
+        padding-bottom: 10px;
+    }
+    .instagram_section_div {
+        position: relative;
+        width: 100%;
+        padding: 27px 0 80px;
+    }
+    .insta_head_section {
+        padding: 0 0 33px;
+    }
+    .topbar {
+        line-height: 29px;
+    }
+    .promo-image-middle {
+        display: flex;
+        flex-direction: column-reverse;
+        .promo-image-right {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            .image-cover {
+                float: left;
+            }
+        }
+        .promo-image-left {
+            padding-top: 0;
+        }
+    }
+    .promo-image-top {
+        .promo-image-left {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+        .promo-image-right {
+            top: 0;
+        }
+        .image-cover {
+            width: 100%;
+        }
+    }
+    .promo-image-bottom {
+        margin-top: 0 !important;
+        .promo-image-left {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+        .promo-image-right {
+            padding-left: 0;
+            top: 0;
+        }
+        .image-cover {
+            width: 100%;
+        }
+    }
+    .promo-img-text {
+        padding: 15px 0 35px;
+        p {
+            font-size: 13px !important;
+        }
+    }
+    .image-cover {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .promo-images-main {
+        padding-bottom: 0;
+    }
+    .Home-images-text {
+        padding-top: 0;
+    }
+    .filter_type {
+        >li {
+            padding-right: 0;
+        }
+        ul {
+            margin: 0 0 15px;
+        }
+        li ul li.select_filter span.checkbox_close {
+            text-align: right;
+            position: relative;
+            left: 3px;
+        }
+    }
+    .filter_colection_inner {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .filter_by_btn {
+        padding-top: 20px;
+        display: block;
+    }
+    .product-right {
+        width: 100% !important;
+        .spr-badge {
+            padding-bottom: 11px;
+            text-transform: capitalize;
+            span.spr-badge-caption {
+                font-size: 10px;
+                padding-left: 5px;
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+    .product-photos {
+        width: 100% !important;
+        padding-right: 0;
+    }
+    .price-review {
+        margin-bottom: 17px;
+        padding-bottom: 10px;
+    }
+    .product-image-container {
+        position: relative !important;
+        padding-bottom: 40px;
+        .owl-dots {
+            bottom: 15px;
+            position: absolute;
+        }
+        img {
+            padding: 0 20px; //Instead of the line below you could use @include box-sizing($bs)
+            box-sizing: border-box;
+        }
+    }
+    .product_top_banner {
+        padding-bottom: 40px;
+        padding-top: 25px;
+        .product-right {
+            h1 {
+                font-size: 21px !important;
+            }
+            .desc {
+                padding: 0;
+            }
+        }
+        .product-description {
+            margin-top: 2px !important;
+        }
+        .share-icons a {
+            float: left;
+            text-align: left;
+        }
+    }
+    .vendor_product {
+        padding-bottom: 14px;
+    }
+    .checkbox_text {
+        width: calc(100% - 36px);
+    }
+    .sub_header_div .Home-images-inner-right {
+        display: none;
+    }
+    .banner_content .cta {
+        margin: 23px 0 24px !important;
+        a {
+            padding: 0 !important;
+        }
+    }
+    .home_product_slider .product-details {
+        margin-top: 7px;
+    }
+    .home-slider .owl-nav button {
+        &.owl-prev {
+            width: 14px;
+            height: 28px;
+            font-size: 0 !important;
+            background-size: 12px !important;
+            margin: 0;
+            position: absolute;
+            background-position: center !important;
+            top: calc(50% - 64px); //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: translateY(-50%);
+        }
+        &.owl-next {
+            width: 14px;
+            height: 28px;
+            font-size: 0 !important;
+            background-size: 12px !important;
+            margin: 0;
+            position: absolute;
+            background-position: center !important;
+            top: calc(50% - 64px); //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+            transform: translateY(-50%);
+        }
+    }
+    .bland_logo_slide .owl-nav button {
+        width: 11px;
+        height: 22px;
+    }
+    input#footer-EMAIL {
+        padding-left: 0;
+    }
+    ul.filter_type {
+        >li {
+            width: 100%;
+            ul {
+                position: static;
+                float: left;
+                width: 100%;
+            }
+        }
+        h2 {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+    .share-icons label {
+        width: auto;
+    }
+    .product-description .rte {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 768px) and(max-width: 800px) {
+    .sub_header_div {
+        h2 {
+            font-size: 26px !important;
+        }
+        p {
+            font-size: 13px !important;
+        }
+    }
+    .Home-images-inner .Home-images-inner-left {
+        padding-top: 6px;
+        padding-bottom: 3px;
+    }
+}
+
+@media(max-width:740px) {
+    .filter_mobile_main .product {
+        width: 97.9166666666666667% !important;
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width:568px) {}
+
+@media(max-width:359px) {
+    input {
+        &#footer-subscribe {
+            width: 122px;
+        }
+        &#footer-EMAIL {
+            width: calc(100% - 132px);
+        }
+    }
+    .signp-up-btn {
+        width: 122px;
+    }
+}
+
+@media(max-width:320px) {}
+
+.gridlock .row {
+    width: auto;
+}
+
+.coverheader .topbar {
+    display: none;
+}
+
+.top_bar_div a {
+    //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: none;
+}
+
+.select_filter .checkbox_tag:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 2px;
+    background: $color_boulder_approx;
+}
+
+.product_content h3 {
+    margin-bottom: 0 !important;
+}
+
+.customer_login_main .action_bottom {
+    border: $color_log_cabin_approx solid 1px;
+    display: table;
+    letter-spacing: 0.5px;
+    input {
+        margin: 0;
+        padding: 0;
+        background: none;
+        color: $color_log_cabin_approx;
+        width: 160px;
+        display: table;
+        letter-spacing: 0.5px;
+        padding: 10px;
+    }
+    &:hover input {
+        color: $white;
+    }
+}
+
+.rte_body a {
+    color: $black;
+    text-decoration: underline;
+}
+
+#how-to-use a {
+    color: $black;
+    text-decoration: underline;
+}
+
+#ingredients a {
+    color: $black;
+    text-decoration: underline;
+}
+
+.row ul#cart ul.submenu li {
+    padding: 0 !important;
+    width: 100%;
+    text-align: left;
+    line-height: normal !important;
+    height: auto !important;
+    min-height: 0;
+    float: left;
+    display: block;
+    padding: 0 0 7px !important;
+}
+
+li.dropdown.has_sub_menu:hover ul.submenu {
+    display: block;
+}
+
+.footer_awards_logo ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 453px;
+    margin: 20px auto 0;
+    li {
+        padding: 0 2px; //Instead of the line below you could use @include box-sizing($bs)
+        box-sizing: border-box;
+    }
+}
