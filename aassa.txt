@@ -1,0 +1,67 @@
+<div style="text-align: center;">We are proud to offer our exclusive bea Skin Care Foundation Training Course:</div>
+<p> </p>
+<div class="grid collection-grid">
+<div class="grid__item one-whole medium--one-quarter large--one-quarter collection-collage__item text-center">
+<div><img src="//cdn.shopify.com/s/files/1/0886/3860/files/kit2_large.png?v=1489561015" alt="" style="display: block; margin-left: auto; margin-right: auto;" /><img src="//cdn.shopify.com/s/files/1/0886/3860/files/kit3_large.png?v=1489561038" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+<div class="grid__item one-whole medium--three-quarters large--three-quarters collection-collage__item main_amf">
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">bea Skin Care Founder Bianca Estelle and celebrity facialist Sarah Cordier have collaborated to create a bespoke bea Skin Care foundation training course for beauty therapists, which will be offered for the first time to a small, select group of trainees. This six-hour training course includes a free bea Skin Care product starter kit and you’ll receive two certificates on completion.</p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">bea Skin Care medi-facials use biologically active ingredients specially formulated to target each and every layer of the skin. These are high performance, luxury treatments that are performed in the comfort of clients’ own homes and generate visible improvements in a wide range of skincare concerns, ranging from acne to positive ageing.</p>
+ 
+<h2 style="text-align: center;">Course Content</h2>
+ 
+<p style="text-align: center;">This one day course will cover the following topics and will be structured as follows:</p>
+<p style="text-align: center;"> </p>
+<ul style="text-align: center;">
+<li><strong>Product Knowledge</strong> with Bianca Estelle, Founder of bea Skin Care</li>
+<li><strong>Treatment Training</strong> in all aspects of bea Skin Care’s signature medi-facials</li>
+<ul></ul>
+</ul>
+<p style="text-align: center;"><strong>Early Lunch</strong></p>
+<ul style="text-align: center;">
+<li><strong>Demonstration</strong> with Sarah Cordier, celebrity facialist</li>
+<li><strong>Practical </strong>hands-on application, whereby therapists perform a full bea Skin Care medi-facial treatment</li>
+<li><strong>Retailing and Sales Training</strong>, followed by a written test</li>
+</ul>
+</div>
+</div>
+<div class="grid collection-grid">
+<div class="grid__item one-whole medium--one-quarter large--one-quarter collection-collage__item"></div>
+<p style="text-align: center;">Enhance your skill set, impress your clients and generate more sales!</p>
+<p style="text-align: center;"> </p>
+<div class="grid__item one-whole medium--three-quarters large--three-quarters collection-collage__item blue-line" style="text-align: center;"><span style="font-size: 16px; text-align: center;"></span></div>
+<div class="grid__item one-whole medium--three-quarters large--three-quarters collection-collage__item blue-line" style="text-align: center;"><span style="font-size: 16px; text-align: center;"></span></div>
+</div>
+<h2 style="text-align: center; margin-bottom: 0px;">Meet your trainers</h2>
+<p> </p>
+<div class="grid collection-grid">
+<div class="grid__item one-whole medium--two-fifths large--two-fifths collection-collage__item text-center">
+<div class="icon-right"><img alt="" src="//cdn.shopify.com/s/files/1/0886/3860/files/biancacircle_cmall_compact.png?v=1530608743" style="float: none; display: block; margin-left: auto; margin-right: auto;" /></div>
+<h2 class="author-left" style="text-align: center;">Bianca Estelle</h2>
+<div class="content-left" style="text-align: center;">
+<p> </p>
+<p>Bianca Estelle is a Harley Street trained Skin Specialist and alumna of the University of the Arts, London. Throughout her fourteen year career, she has achieved advanced level accreditations in numerous cutting-edge skincare procedures and has represented several medical aesthetics brands across the UK and Europe. After establishing an international network of clinics, she applied her scientific training to the development of her cosmeceutical product line, bea Skin Care, which has been featured in InStyle UK, Vogue, Tatler, The Daily Mail, and Glamour.</p>
+<p> </p>
+<p>Endorsed by high profile media personalities including socialite Lady Victoria Hervey and model Vogue Williams, Bianca Estelle’s global client base attests to her knowledge, technical skill, and experience in the demanding and competitive field of medical aesthetics.</p>
+<p>She presides as Clinical Director over her medical aesthetics and IV therapy clinics, bea Skin Clinic and Vitamin Injections London, remaining focused on providing an ever-expanding range of products formulated to radically improve skin health from the inside out.</p>
+<p> </p>
+</div>
+</div>
+<div class="grid__item one-whole medium--one-fifth large--one-fifth collection-collage__item text-center vertical-bottle">
+<div class="center-bottle" style="text-align: center;"></div>
+</div>
+<div class="grid__item one-whole medium--two-fifths large--two-fifths collection-collage__item text-center">
+<div class="icon-right"><img src="//cdn.shopify.com/s/files/1/0886/3860/files/sarahcordier_compact.png?v=1489557596" alt="" style="display: block; margin-left: auto; margin-right: auto;" /></div>
+<h2 class="author-right" style="text-align: center;">Sarah Cordier</h2>
+<div class="content-right">
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">Sarah Cordier is a renowned celebrity aesthetician and trainer. Throughout her sixteen year career, she has performed VIP treatments for numerous celebrity clients and has been responsible for developing training manuals and courses for popular skincare brands, including those under the Space NK umbrella. She also applies her passion for beauty and skincare to event management, organising international press events on behalf of Harrods, Selfridges, Liberty, and John Lewis as well as several five-star hotels. She has made regular appearances on QVC UK representing Eve Lom and also represented Kat Burki at the Cosmetic Executive Women (CEW) demonstration. </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">With her strong track record of success in the beauty industry, Sarah Cordier’s qualified therapy sessions and comprehensive training courses are highly sought after. She has been profiled in Vogue, Tatler, OK, Elle and The Daily Mail, whilst continuing to work with international beauty companies and on her own business with great success. </p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;">There are limited spaces available. For information and to book, please call +44 (0) 203 322 1425 or email <a href="mailto:info@bea-skincare.com">info@bea-skincare.com</a></p>
+</div>
+</div>
+</div>
+</div>

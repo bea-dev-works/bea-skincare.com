@@ -364,12 +364,14 @@ ul {
     }
     &.submenu {
         position: absolute;
-        background: $color_alabaster_approx;
-        padding: 10px; //Instead of the line below you could use @include box-sizing($bs)
+        background: #f9f9f9;
+        padding: 20px 30px;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 200px;
-        margin: 0 0 0 -13px;
+        min-width: 200px;
+        margin: 0 0 0 -12px;
         display: none;
+        width: auto;
     }
 }
 
@@ -1084,6 +1086,7 @@ span {
         img {
             padding: 0 20px; //Instead of the line below you could use @include box-sizing($bs)
             box-sizing: border-box;
+            touch-action: pinch-zoom;
         }
     }
     .product_top_banner {

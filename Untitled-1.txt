@@ -1,0 +1,8 @@
+{% comment %} {% if collection.description != "<p>Add some descriptive text to your all collections page.</p>" %}
+          <div id="collection-description">
+            <div class="rte">
+              {{ collection.description | remove: "[banner]" }}
+            </div>
+          </div>
+          {% endif %}
+          {% endcomment %}
